@@ -3,6 +3,10 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 name = "pypi"
 
+[dev-packages]
+nbdime = "*"
+jupyterlab = "*"
+
 [packages]
 pandas = "*"
 schedule = "*"
@@ -15,7 +19,10 @@ dateparser = "*"
 mlflow = "*"
 numpy = "*"
 scikit-learn = "*"
-tensorflow = "*"
+tensorflow = ">=2.0, <2.5"
+pmdarima = "*"
+statsmodels = "*"
+plotly = "*"
 
 [requires]
 python_version = "3.8"
